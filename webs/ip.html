@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css.css" />
+  </head>
+  <style>
+    body {
+      background-color: #68de8d;
+    }
+    #nav {
+      background-color: #05634d;
+    }
+  </style>
+  <header>
+    <nav class="navbar navbar-expand-lg" id="nav">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="hal2.html">Kembali</a>
+      </div>
+    </nav>
+  </header>
+  <body>
+    <div class="m-3">
+      <h2>Konfigurasi IP Static</h2>
+      <p>Setelah mempelajari perintah Debian, kita dapat mengatur IP Static sebagai bekal projek akhir.</p>
+      <br />
+      <p>berikut langkah-langkah konfigurasi IP Static:</p>
+    </div>
+    <div class="m-3">
+
+        <p>1.	Masuk ke akun Debian kemudian masuk sebagai super user</p> 
+        <img src="ip/Gambar96.png" alt="" height="300">
+        <p>2.	Setelah masuk sebagai super user, ketik nano /etc/network/interfaces</p>
+        <img src="ip/Gambar97.png" alt="" height="300">
+        <p>3.	Setelahnya akan muncul  tampilan seperti ini </p>
+        <img src="ip/Gambar98.png" alt="" height="300">
+        <p>4.	Kemudian ubah hingga menjadi seperti ini </p>
+        <img src="ip/Gambar99.png" alt="" height="300">
+        <p>5.	Kemudian gunakan perintah systemctl restart networking untuk me-restart jaringan</p> 
+        <img src="ip/Gambar100.jpg" alt="">
+        <p>6.	Setelahnya gunakan perintah systemctl status networking untuk mengecek status jaringan </p>
+        <img src="ip/Gambar101.png" alt="" height="400">
+        <p>7.	Kemudian gunakan juga perintah ip a untuk mengecek apakah IP sudah berganti </p>
+        <img src="ip/Gambar102.png" alt="" height="300">
+        <p>8.	Pastikan pada pernyataan ini bertuliskan UP bukan DOWN ya </p>
+        <img src="ip/Gambar103.png" alt="" height="300">
+        <p>9.	Cari aplikasi ini di perangkat</p>
+        <img src="ip/Gambar104.jpg" alt="" >
+        <p>10.	Kemudian klik kanan pada Ethernet dan pilih Properties</p>
+        <img src="ip/Gambar105.png" alt="" height="300">
+        <p>11.	Pilih bagian ini kemudian klik dua kali  </p>
+        <img src="ip/Gambar106.jpg" alt="">
+        <p>12.	Kemudian isi kolom hingga sesuai dengan IP,  di sini saya menggunakan IP saya <br> 
+            (IP address yang atas adalah punya perangkat) </p>
+            <img src="ip/Gambar107.png" alt="" height="300">
+        <p>13.	Kemudian atur adaptor Debian </p>
+        <img src="ip/Gambar108.png" alt="" height="300">
+        <p>14.	Buka Terminal atau CMD untuk melakukan ping ke Debian dengan memasukkan alamat IP-nya </p>
+        <img src="ip/Gambar109.png" alt="" height="300">
+        <p>15.	Pakai perintah ping juga di Debian untuk mengecek koneksi dengan perangkat kita dengan menulis IP-nya </p>
+        <img src="ip/Gambar110.png" alt="" height="300">
+     
+    </div>
+
+
+
+
+ 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>

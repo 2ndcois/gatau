@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css.css" />
+  </head>
+  <style>
+    body {
+      background-color: #68de8d;
+    }
+    #nav {
+      background-color: #05634d;
+    }
+  </style>
+  <header>
+    <nav class="navbar navbar-expand-lg" id="nav">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="hal2.html">Kembali</a>
+      </div>
+    </nav>
+  </header>
+  <body>
+    <div class="m-3">
+      <h2>Konfigurasi Web Server</h2>
+      <p>Akhirnya, kita akan mencoba membuat website yang dapat dicari melalui mesin telussur menggunakan Web Server</p>
+      <br />
+      <p>berikut langkah-langkah konfigurasi Web Server:</p>
+    </div>
+    <div class="m-3">
+      <p>1. Masuk ke akun Debian kita, kemudian login lagi sebagai super user</p>
+      <p>2. Jangan lupa untuk menkonfigurasi web terlebih dahulu</p>
+      <img src="web/Gambar130.png" alt="" />
+      <p>3. Install paket bernama apache2</p>
+      <img src="web/Gambar131.png" alt="" />
+      <p>4. Buka chrome dan cari nama ip atau nama domain kita</p>
+      <img src="web/Gambar132.png" alt="" />
+      <p>5. Untuk mengubahnya, saya menghapus file index dan menggantinya di dalam direktori web</p>
+      <img src="web/Gambar133.png" alt="" />
+      <p>6. Setelahnya gunakan perintah ini untuk mengatur lokasi file yang akan berjalan di chrome</p>
+      <img src="web/Gambar134.png" alt="" />
+      <p>7. Ubah isi file tersebut menjadi</p>
+      <img src="web/Gambar135.png" alt="" />
+      <p>8. Kemudian saya mengisi file index.html di direktori web menjadi</p>
+      <img src="web/Gambar136.png" alt="" />
+      <p>9. Setelahnya restart apache2</p>
+      <img src="web/Gambar137.png" alt="" />
+      <p>10. Untuk mengecek apakah berhasil, kembali cari ip atau nama domain di chrome</p>
+      <img src="web/Gambar138.png" alt="" height="300"/>
+      <p>11. Setelahnya atur izin menjadi 777</p>
+      <img src="web/Gambar139.png" alt="" />
+      <p>12. Kemudian buka Visual Studio Code dan install ekstensi Remote -SSH</p>
+      <img src="web/Gambar140.png" alt="" />
+      <p>13. Kemudian atur Hostname sebagai ip dan user sebagai username Debian</p>
+      <img src="web/Gambar141.png" alt="" height="300"/>
+      <p>14. Apabila sudah, jalankan remote dan masukkan password</p>
+      <p>15. Setelahnya pilih direktori dimana kita menyimpan file yang akan ditampilkan di chrome</p>
+      <img src="web/Gambar142.png" alt="" height="300"/>
+      <p>16. Lakukan proses coding seperti biasanya</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>

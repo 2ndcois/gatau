@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css.css" />
+  </head>
+  <style>
+    body {
+      background-color: #68de8d;
+    }
+    #nav {
+      background-color: #05634d;
+    }
+  </style>
+  <header>
+    <nav class="navbar navbar-expand-lg" id="nav">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="hal2.html">Kembali</a>
+      </div>
+    </nav>
+  </header>
+  <body>
+    <div class="m-3">
+      <h2>Konfigurasi dns</h2>
+      <p>Setelah mempelajari IP, kita akan mengubahnya menjadi sesuatu yang dapat dibaca oleh manusia</p>
+      <br />
+      <p>berikut langkah-langkah konfigurasi dns:</p>
+    </div>
+    <div class="m-3">
+
+        <p>1.	Masuk menjadi super user dan ganti direktori menjadi / </p>
+        <img src="dns/Gambar111.png" alt="">
+        <p>2.	Kemudian masukkan disk iso debian dengan menklik ribbon peranti dan drive optik. Setelahnya tulis apt-get install bind9 dnsutils</p>
+        <img src="dns/Gambar112.png" alt="">
+        <p>3.	 Setelah selesai proses instalasi, ganti direktori menjadi /etc/bind </p>
+        <img src="dns/Gambar113.png" alt="">
+        <p>4.	Disini saya menggunakan perintah copy paste untuk membuat dua file baru bernama: <br> 
+        db.1 dan db.2 </p>
+        <img src="dns/Gambar114.png" alt="">
+        <p>5.	Kemudian saya mengganti isi dari db.1</p>
+        <img src="dns/Gambar115.png" alt=""> 
+        <p>6.	Ubah isi dari file ini  yang awalnya seperti ini</p>
+        <img src="dns/Gambar116.png" alt="">
+        <p>7.	Ubah menjadi seperti ini</p>
+        <img src="dns/Gambar117.png" alt="">
+        <p>8.	Kemudian edit db.2 </p>
+        <img src="dns/Gambar118.png" alt="">
+        <p>9.	Ubah isi filenya menjadi seperti ini</p>
+        <img src="dns/Gambar119.png" alt="">
+        <p>10.	Kemudian ubah file named.conf.local</p>
+        <img src="dns/Gambar120.png" alt="">
+        <p>11.	Ubah yang awalnya seperti ini</p>
+        <img src="dns/Gambar121.png" alt="">
+        <p>12.	Menjadi seperti ini</p>
+        <img src="dns/Gambar122.png" alt="">
+        <p>13.	Kemudian ubah file resolv.conf</p>
+        <img src="dns/Gambar123.png" alt="">
+        <p>14.	Ubah isi file menjadi seperti ini</p>
+        <img src="dns/Gambar124.png" alt="">
+        <p>15.	Kemudian ubah file  hosts</p>
+        <img src="dns/Gambar125.png" alt="">
+        <p>16.	Ubah isi file menjadi seperti ini</p>
+        <img src="dns/Gambar126.png" alt="">
+        <p></p>17.	Kemudian restart bind9 </p>
+        <img src="dns/Gambar127.png" alt="">
+        <p>18.	Gunakan perintah nslookup (nama domain[saya: Hibatul.net.id]) dan juga nslookup (alamat ip)</p>
+        <img src="dns/Gambar128.png" alt="">
+        <p>19.	Terakhir, gunakan perintah nslookup (nama domain) dan juga ping (nama domain) di command prompt atau terminal  </p>
+        <img src="dns/Gambar129.png" alt="">
+    </div>
+
+
+
+
+ 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
